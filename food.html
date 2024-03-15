@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #ccc;
+        }
+        .cards {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 4px 8px black;
+            transition: 1s;
+            padding: 25px;
+            background: #ccc;
+        }
+
+        .desc {
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .cards:hover {
+            box-shadow: 4px 8px 16px goldenrod;
+            border: none;
+            transition: 1s;
+        }
+
+        span {
+            margin-left: 50px;
+            color: black;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        .first-container,.second-container,.third-container{
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            padding: 30px;
+            margin: 25px;
+            gap: 78px;
+        }
+        .search-container{
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            margin-top:66px;
+        }
+        .first-container{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://cdn.pixabay.com/photo/2017/10/22/20/42/table-2879213_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        .second-container{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        .third-container{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        h1{
+            margin-top: 10px;
+            text-align: center;
+            font-style: normal;
+            font-variant: small-caps;
+            color: #22adcd;
+        }
+        .searchBox{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 10%;
+            left: 14%;
+            margin: 50px;
+            width: 70%;
+            gap:15px;
+        }
+        .searchBox input{
+        border: none;
+        border-radius: 5px;
+        width: 60%;
+        padding: 15px;
+        }
+        .searchBox button:hover,input:hover{
+            box-shadow: 4px 8px 16px goldenrod;
+            border: none;
+            transition: 1s;
+        }
+        .searchBox button{
+            width: 100px;
+            color: black;
+            border: none;
+            background: rgba(200, 255, 0, 0.717);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        .nav-items{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 50px;
+            background:linear-gradient(125deg,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F,#F9F871); 
+        }
+        .nav-items li{
+            display: inline-block;
+            justify-content:space-between;
+            padding: 10px;
+            list-style-type: none;
+            font-size: large;
+            margin-top: 4px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+            background:black;
+            padding: 11px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        ul:first-child{
+            font-variant: small-caps;
+            color: rgba(193, 18, 114, 0.721);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-items">
+        <nav class="item">
+            <ul>
+                <li>Logo</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="food.html">Food-Display</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="items-container">
+        <h1>Food Items</h1>
+        <div class="search-container">
+            <div class="searchBox">
+                <input type="search" id="search-input" placeholder="Search item name here.">
+                <button id="search">Search</button>
+            </div>
+            <div id="result"></div>
+        </div>
+        <div class="first-container">
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2018/04/07/15/03/pizza-3298685_1280.jpg">
+                <div class="desc">
+                    <h3>Pizza</h3>
+                    <p>Price<span>10$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2024/02/04/20/02/ai-generated-8553027_640.jpg">
+                <div class="desc">
+                    <h3>Samosa</h3>
+                    <p>Price<span>12$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_1280.jpg">
+                <div class="desc">
+                    <h3>Prestige</h3>
+                    <p>Price<span>20$</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2015/05/07/13/46/cappuccino-756490_1280.jpg">
+                <div class="desc">
+                    <h3>Coffee</h3>
+                    <p>Price<span>25$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2017/08/03/14/38/ice-cream-2576622_1280.jpg">
+                <div class="desc">
+                    <h3>Ice-Cream</h3>
+                    <p>Price<span>35$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2017/08/05/19/01/milk-2585114_1280.jpg">
+                <div class="desc">
+                    <h3>Choco-Shake</h3>
+                    <p>Price<span>25$</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="third-container">
+            <div class="cards">
+                <img src="https://media.istockphoto.com/id/998309062/photo/burger-with-beef-and-cheese.webp?b=1&s=612x612&w=0&k=20&c=mHsQePbxqrXOk5V7ImuJP0HiFr5ed_1FbFa4eDCwwkE=">
+                <div class="desc">
+                    <h3>Burger</h3>
+                    <p>Price<span>25$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2017/12/07/12/22/food-3003693_1280.jpg">
+                <div class="desc">
+                    <h3>Dahipuri</h3>
+                    <p>Price<span>10$</span></p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="https://cdn.pixabay.com/photo/2015/06/23/05/23/fresh-jalebi-818316_1280.jpg">
+                <div class="desc">
+                    <h3>Jalebi</h3>
+                    <p>Price<span>20$</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

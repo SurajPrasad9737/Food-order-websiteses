@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "itemName": "Burger",
+            "price": "25$",
+            "image": "./Images/burger.jpg"
+        },
+        {
+            "itemName": "Chocoshake",
+            "price": "25$",
+            "image": "./Images/chocoshake.jpg"
+        },
+        {
+            "itemName": "Coffee",
+            "price": "25$",
+            "image": "./Images/coffee.jpg"
+        },
+        {
+            "itemName": "Dahipuri",
+            "price": "10$",
+            "image": "./Images/dahipuri.jpg"
+        },
+        {
+            "itemName": "Ice-creame",
+            "price": "35$",
+            "image": "./Images/icecreame.jpg"
+        },
+        {
+            "itemName": "Jalebi",
+            "price": "20$",
+            "image": "./Images/jalebi.jpg"
+        },
+        {
+            "itemName": "Pizaa",
+            "price": "10$",
+            "image": "./Images/pizaa.jpg"
+        },
+        {
+            "itemName": "Samosa",
+            "price": "12$",
+            "image": "./Images/samosa.jpg"
+        },
+        {
+            "itemName": "Prestige",
+            "price": "25$",
+            "image": "./Images/perstiges.jpg"
+        }
+    ]
+}
